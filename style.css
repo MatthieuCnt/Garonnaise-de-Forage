@@ -610,8 +610,8 @@ img {
 	box-sizing: border-box;
 	padding: 20px;
 	/*width: 370px;*/
+	margin: 2rem;
 	text-align: center;
-	margin: auto;
 	margin-bottom: 2rem;
   }
   
