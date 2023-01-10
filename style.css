@@ -191,6 +191,18 @@ body {
 	text-align: center;
 }
 
+.titlesite {
+	font-size: 26px;
+}
+
+.titletext {
+	font-size: 16px;
+}
+.textp {
+	font-size: 14px;
+	text-align: center;
+}
+
 .menu {
 	display: inline-flex;
 	align-items: center;
@@ -602,6 +614,15 @@ img {
 	font-weight: 600;
 	margin-top: 30px;
   }
+
+  .title_location {
+	color: black;
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 26px;
+	font-weight: 600;
+	margin-top: 30px;
+  }
   
   .subtitle {
 	color: #eee;
@@ -636,7 +657,7 @@ img {
 	padding: 4px 20px 0;
 	width: 100%;
   }
-  
+ 
   .cut {
 	background-color: #333333;
 	border-radius: 10px;
@@ -668,6 +689,7 @@ img {
 	transform-origin: 0 50%;
 	transition: transform 200ms, color 200ms;
 	top: 20px;
+	font-style: italic;
   }
   
   .input:focus ~ .placeholder,
@@ -682,8 +704,35 @@ img {
   .input:focus ~ .placeholder {
 	color: #dc2f55;
 	font-weight: bold;
-	
   }
+
+  .placeholder_facultative {
+	color: black;
+	font-family: sans-serif;
+	left: 20px;
+	line-height: 14px;
+	pointer-events: none;
+	position: absolute;
+	transform-origin: 0 50%;
+	transition: transform 200ms, color 200ms;
+	top: 20px;
+	font-style: italic;
+  }
+  
+  .input:focus ~ .placeholder_facultative,
+  .input:not(:placeholder-shown) ~ .placeholder_facultative {
+	transform: translateY(-40px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder_facultative {
+	color: #808097;
+  }
+ 
+  .input:focus ~ .placeholder_facultative {
+	color: white;
+	font-weight: bold;
+  }
+
   
   .submit {
 	background-color: gray;
@@ -715,8 +764,8 @@ img {
 
 .footertitle {
 	color: #fff;
-	padding-bottom: 0.5rem;
-	font-size: 1.3rem;
+	padding-bottom: 1.5rem;
+	font-size: 2rem;
 	text-align: center;
 }
 
@@ -732,8 +781,12 @@ img {
 
 .footertext {
 	color: #fff;
+	font-size: 1.5rem;
 }
 
+li {
+	margin-bottom: 1rem;
+}
 .mail {
 	padding-right: 0.5rem;
 }
@@ -756,12 +809,6 @@ img {
 	padding: 2rem;
 	background-color: rgba(250, 235, 215, 0.384);
 	box-shadow: 0 0 5px hsl(0deg 0% 0% / 50%);
-}
-
-.footertitle {
-	padding-bottom: 1rem;
-	font-size: 1.3rem;
-	text-align: center;
 }
 
 .footerul {
