@@ -1,38 +1,136 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Shrikhand"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="normalizer.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+
 		<script
 			src="https://kit.fontawesome.com/5f95a73160.js"
 			crossorigin="anonymous"
 		></script>
-
 		<title>Garonnaise de forage</title>
 	</head>
-	<body style="padding:2rem;">
-		<div class="container">
-			<header>
-				<a href="index.html">
-					<img src="img/logo GDF 2017.png" class="logo" alt="logo" />
+	<body>
+		<div class="loader">
+			<div class="loader__itemContainer">
+				<div class="loader__item loader__item--1"></div>
+				<div class="loader__item loader__item--2"></div>
+				<div class="loader__item loader__item--3"></div>
+			</div>
+		</div>
+
+		<!--En-tête de page-->
+
+		<header class="main-header">
+			<div class="topnav" id="myTopnav">
+				<div class="header-logo">
+					<img src="img/logo.png" alt="logo" />
+				</div>
+				<div class="main-navbar">
+					<a href="index.html" class="active"><span class="span">Accueil</span></a>
+					<a href="nav_decouvrir.html"><span class="span">Nos Métiers</span></a>
+					<a href="nav_contact.html"><span class="span">Contact</span></a>
+				<a
+					href="javascript:void(0);"
+					class="topnav-link icon"
+					onclick="editNav()"
+				>
+					<i class="fa fa-bars"></i>
 				</a>
-			</header>
-			<main>
-				<section>
-					<h1 style="text-align:center">Garonnaise de forage<br>
-					fondations spéciales<br><br>
-					Pieux - Micropieux - Soutènement</h1>
-					<p>Notre structure :<br><br>
+			</div>
+		</header>
+			<div class="titlelogo">
+				<h2 class="titlesite">Garonnaise de forage</h2>
+				<p class="textp">
+					fondations spéciales<br>Pieux - Micropieux - Soutènement
+				</p>
+			</div>
+			<div class="slideshow">
+				<ul>
+				<li><img src="img/slide1.jpg" alt></li>
+				<li><img src="img/slide2.jpg" alt></li>
+				<li><img src="img/slide3.jpg" alt></li>
+				<li><img src="img/slide4.jpg" alt></li>
+				<li><img src="img/slide5.jpg" alt></li>
+				</ul>
+				<div class="barre_progression"></div>
+				</div>
+		<main class="contener">
+			<section class="welcome">
+				<h2 class="title">Notre structure :</h2>
+				<p>
 					La Garonnaise de forage fut crée en septembre 1997 pour répondre aux enjeux des aléas géotéchniques dans le secteur de la construction.
 					Les sols limoneux et argileux très répandus dans le sud-ouest nécessitent la mise en place de fondations dites "spéciales".<br>
 					Depuis notre création nous accompagons les particuliers, les entreprises, les collectivités et les promoteurs dans la réalisation de leur projets.
 					Nous avons pu acqérir une grande connaissance sur la nature des sols rencontrés, depuis plus de 20ans.<br><br>
-					Où nous trouver<br><br>
-					Avec un siège social basé à cugnaux (près de Toulouse), nos équipes d'ingénieurs et de techniciens sont à votre disposition pour répondre à toutes sollicitations, vous conseiller et vous accompagner dans vos projets.
+					<img style="margin: auto; width: auto;" src="img/back.jpg"/><br><br>
 					</p>
-					<a href="https://www.google.com/maps/place/Garonnaise+de+Forage/@43.5775421,1.386866,13z/data=!4m5!3m4!1s0x0:0xc9883fe7c6544610!8m2!3d43.5551217!4d1.3659882" >
-					<center><img src="img/map.png" style="width: 35rem; padding-top: 2rem;"/></a></center>
+					
 				</section>
 			</main>
-		</div>
+			<p style="padding: 2rem; text-align: center; font-weight: bold;">Où nous trouver<br><br>
+					Avec un siège social basé à cugnaux (près de Toulouse), nos équipes d'ingénieurs et de techniciens sont à votre disposition pour répondre à toutes sollicitations, vous conseiller et vous accompagner dans vos projets.</p>
+					<a href="https://www.google.com/maps/place/Garonnaise+de+Forage/@43.5775421,1.386866,13z/data=!4m5!3m4!1s0x0:0xc9883fe7c6544610!8m2!3d43.5551217!4d1.3659882" >
+					<center><img src="img/map.png" style="padding: 2rem;"/></a></center>
+
+			
+		
+		<div class="form">
+			<div class="title">Contactez-nous</div>
+			<div class="input-container ic1">
+			  <input id="firstname" class="input" type="text" placeholder=" " />
+			  <label for="firstname" class="placeholder">Nom et prénom (obligatoire)</label>
+			</div>
+			<div class="input-container ic1">
+				<input id="firstname" class="input" type="text" placeholder=" " />
+				<label for="firstname" class="placeholder">Nom de l'entreprise</label>
+			  </div>
+			<div class="input-container ic2">
+			  <input id="email" class="input" type="text" placeholder=" " />
+			  <label for="email" class="placeholder">email (obligatoire)</label>
+			</div>
+			<div class="input-container ic2">
+			  <input id="firstname" class="input" type="text" placeholder=" " />
+			  <label for="tel" class="placeholder">Numéro de Téléphone</>
+			</div>
+			<div class="input-container ic2">
+				<input id="firstname" class="input" type="text" placeholder=" " />
+				<label for="text" class="placeholder">ville</>
+			  </div>
+			  <div class="input-container ic2">
+				<input id="firstname" class="input" type="text" placeholder=" " />
+				<label for="text" class="placeholder">Votre message</>
+			  </div>
+			<button type="text" class="submit">envoyer</button>
+		  </div>
+		
+		        <!-- Footer -->
+
+				<footer class="footer">
+					<h4 class="footertitle">Contact</h4>
+					<ul class="footerul">
+						<li>
+							<i class="fas fa-envelope mail"></i>
+							<a class="footertext" href="mailto: etudes@garonnaisedeforage.fr"
+							>mail : etudes@garonnaisedeforage.fr</a>
+						</li>
+						<li>
+							<i class="fas fa-map"></i>
+							<a  href=https://www.google.com/maps/place/Garonnaise+de+Forage/@43.5775421,1.386866,13z/data=!4m5!3m4!1s0x0:0xc9883fe7c6544610!8m2!3d43.5551217!4d1.3659882"
+							 class="footertext">Adresse : 8 Rue Aristide Berges<br>31270 Cugnaux
+						</li>
+						<li>
+							<i class="fas fa-mobile-alt tel"></i>
+							<a class="footertext" href="tel:+33561868194">téléphone : 05.61.86.81.94</a>
+						</li>
+					</ul>
+				</footer>
+			<script src="index.js"></script>
 	</body>
-</html>
+		</html>
