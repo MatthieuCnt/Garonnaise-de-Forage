@@ -223,12 +223,11 @@ body {
 }
 .textp {
 	font-size: 14px;
-	text-align: center;
 }
 
 .text_location {
 	font-size: 14px;
-	text-align: center;
+	text-align: justify;
 	padding: 2rem;
 	color: black;
 }
@@ -499,7 +498,7 @@ img {
 
 .welcome {
 	padding: 2rem;
-	text-align: center;
+	text-align: justify;
 	background-color: #333333;
 	margin-top: 42%;
 }
