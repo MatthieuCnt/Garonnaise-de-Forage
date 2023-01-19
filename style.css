@@ -121,6 +121,7 @@ body {
 }
 .header-logo img {
 	width: 15rem;
+	margin-top: 1rem;
 }
 
 .back {
@@ -218,6 +219,7 @@ body {
 	position: relative;
 	color: white;
 	font-weight: bold;
+	margin-top: -2rem;
 }
 .textp {
 	font-size: 14px;
