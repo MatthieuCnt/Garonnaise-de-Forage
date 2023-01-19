@@ -1,9 +1,9 @@
 // Nav responsive
 function editNav() {
 	var x = document.getElementById('myTopnav');
-	if (x.className === 'topnav') {
+	if (x.className === 'main-navbar') {
 		x.className += ' responsive';
 	} else {
-		x.className = 'topnav';
+		x.className = 'main-navbar';
 	}
 }
