@@ -19,6 +19,13 @@ body {
 
 .main-header {
 	background-color: white;
+	margin-top: -1.3rem;
+}
+
+.img_header {
+	position: absolute;
+	width: 100%;
+
 }
 
 .loader {
@@ -208,6 +215,9 @@ body {
 
 .titletext {
 	font-size: 16px;
+	position: relative;
+	color: white;
+	font-weight: bold;
 }
 .textp {
 	font-size: 14px;
@@ -489,6 +499,7 @@ img {
 	padding: 2rem;
 	text-align: center;
 	background-color: #333333;
+	margin-top: 42%;
 }
 
 .title {

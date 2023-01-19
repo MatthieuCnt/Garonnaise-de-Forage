@@ -20,7 +20,7 @@ html * {
 	top: 0;
 	background: #333333;
 	animation: loader 0.01s;
-	animation-delay: 3.5s;
+	animation-delay: 3s;
 	animation-fill-mode: both;
 	z-index: 10000;
 	display: flex;
