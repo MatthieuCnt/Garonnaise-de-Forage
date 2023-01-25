@@ -26,26 +26,27 @@
 		<!--En-tête de page-->
 
 		<header class="main-header">
-				<img class="img_header"  src="img/slide1.jpg" alt="def"/>
-				<div class="topnav">
-					<div class="header-logo">
-						<img href="index.html" src="img/logo_white.png" alt="logo" />
-					</div>
-					<div class="main-navbar"  id="myTopnav" >
-						<a href="index.html" class="active"><span class="span">Accueil</span></a>
-						<a href="nav_decouvrir.html"><span class="span">Nos Métiers</span></a>
-						<a href="nav_contact.html"><span class="span">Contact</span></a>
-						<a href="javascript:void(0);" class="topnav-link icon" onclick="editNav()">
-						<i class="fa fa-bars"></i>
-					</a>
+			<a href="index.html" style="text-decoration: none; display: flex;">
+				<img src="img/logo_white.png" class="logoHeader" alt="logo"/></a>
+			<div class="style_div" id="styleDiv">
+				<div style="display: none;" id="nav_div">
+					<ul class="ulStyle">
+						<li><a href="index.html" class="active"><span class="span">Accueil</span></a></li>
+						<li><a href="nav_decouvrir.html"><span class="span">Nos Métiers</span></a></li>
+						<li><a href="nav_contact.html"><span class="span">Contact</span></a></li>
+					</ul>
 				</div>
-		</header>
+				<button onclick="navbar()">
+					<i style="padding: 1rem; font-size: 1.5rem;" class="fa fa-bars"></i>
+				</button>
+			</div>
 			<div class="titlelogo">
 				<p class="titletext">
-					Fondations spéciales<br>Pieux - Micropieux - Soutènement
-				</p>
+					Fondations spéciales<br>Pieux - Micropieux - Soutènement</p>
 			</div>
+		</header>
 		<main class="contener">
+			<a href="https://www.linkedin.com/company/garonnaise-de-forage/" class="fa fa-brands fa-linkedin"></a>
 			<section class="welcome">
 				<h2 class="title">Notre structure :</h2>
 				<p class="textp" >

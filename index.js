@@ -1,9 +1,12 @@
-// Nav responsive
-function editNav() {
-	var x = document.getElementById('myTopnav');
-	if (x.className === 'main-navbar') {
-		x.className += ' responsive';
-	} else {
-		x.className = 'main-navbar';
+// Nav
+function navbar() {
+    nav = document.getElementById('nav_div');
+  
+
+	if (nav.style.display == 'block'){
+		nav.style.display = 'none';
+	}
+	else {
+		nav.style.display = 'block';
 	}
 }
