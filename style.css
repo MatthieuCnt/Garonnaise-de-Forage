@@ -15,8 +15,6 @@ body {
 	background-color: white;
 }
 
-
-
 /* Header du site*/
 
 header {
@@ -117,10 +115,7 @@ header {
 }
 
 .topnav {
-	overflow: hidden;
-	margin: 3.5% 3.5% 0% 3.5%;
 	display: flex;
-	justify-content: space-between;
 }
 
 .back {
@@ -141,6 +136,9 @@ header {
 
 /* Nav */
 
+.main-navbar {
+	display: none;
+}
 .ulStyle{
     list-style-type: none;
     margin: 0;
@@ -255,6 +253,11 @@ img {
 	background-color: #333333;
 }
 
+.section_img {
+	margin: auto;
+	width: auto;
+}
+
 .fa.fa-brands.fa-linkedin {
     font-size: 3.5rem;
     color: white;
@@ -266,7 +269,7 @@ img {
 }
 
 .title {
-	padding: 1rem 0rem;
+	padding: 2rem 0rem;
 	text-align: center;
 }
 
@@ -275,7 +278,7 @@ img {
 	flex-direction: column;
 	max-width: 100%;
 	margin-top: 4rem;
-	margin: 4rem 2rem;
+	margin: 1rem 2rem;
 }
 
 .contenerglobal {
@@ -386,171 +389,6 @@ img {
 	padding: 1rem;
 }
 
-/* FORM */
-
-
-  
-.form {
-	background-color: #333333 ; /*#15172b*/
-	border-radius: 20px;
-	box-sizing: border-box;
-	padding: 20px;
-	/*width: 370px;*/
-	margin: 2rem;
-	text-align: center;
-	margin-bottom: 2rem;
-  }
-  
-  .title {
-	color: #eee;
-	font-family: sans-serif;
-	font-size: 20px;
-	font-weight: 600;
-  }
-
-  .title_location {
-	color: black;
-	font-family: sans-serif;
-	text-align: center;
-	font-size: 26px;
-	font-weight: 600;
-	margin-top: 30px;
-  }
-  
-  .subtitle {
-	color: #eee;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-weight: 600;
-	margin-top: 10px;
-  }
-  
-  .input-container {
-	height: 50px;
-	position: relative;
-	width: 100%;
-  }
-  
-  .ic1 {
-	margin-top: 40px;
-  }
-  
-  .ic2 {
-	margin-top: 30px;
-  }
-  
-  .input {
-	border-radius: 12px;
-	border: 0;
-	box-sizing: border-box;
-	color: black;
-	font-size: 18px;
-	height: 100%;
-	outline: 0;
-	padding: 4px 20px 0;
-	width: 100%;
-  }
- 
-  .cut {
-	background-color: #333333;
-	border-radius: 10px;
-	height: 20px;
-	left: 20px;
-	position: absolute;
-	top: -20px;
-	transform: translateY(0);
-	transition: transform 200ms;
-	width: 76px;
-  }
-  
-  .cut-short {
-	width: 50px;
-  }
-  
-  .input:focus ~ .cut,
-  .input:not(:placeholder-shown) ~ .cut {
-	transform: translateY(8px);
-  }
-  
-  .placeholder {
-	color: black;
-	font-family: sans-serif;
-	left: 20px;
-	line-height: 14px;
-	pointer-events: none;
-	position: absolute;
-	transform-origin: 0 50%;
-	transition: transform 200ms, color 200ms;
-	top: 20px;
-	font-style: italic;
-  }
-  
-  .input:focus ~ .placeholder,
-  .input:not(:placeholder-shown) ~ .placeholder {
-	transform: translateY(-40px) translateX(10px) scale(0.75);
-  }
-  
-  .input:not(:placeholder-shown) ~ .placeholder {
-	color: #808097;
-  }
-  
-  .input:focus ~ .placeholder {
-	color: #dc2f55;
-	font-weight: bold;
-  }
-
-  .placeholder_facultative {
-	color: black;
-	font-family: sans-serif;
-	left: 20px;
-	line-height: 14px;
-	pointer-events: none;
-	position: absolute;
-	transform-origin: 0 50%;
-	transition: transform 200ms, color 200ms;
-	top: 20px;
-	font-style: italic;
-  }
-  
-  .input:focus ~ .placeholder_facultative,
-  .input:not(:placeholder-shown) ~ .placeholder_facultative {
-	transform: translateY(-40px) translateX(10px) scale(0.75);
-  }
-  
-  .input:not(:placeholder-shown) ~ .placeholder_facultative {
-	color: #808097;
-  }
- 
-  .input:focus ~ .placeholder_facultative {
-	color: white;
-	font-weight: bold;
-  }
-
-  
-  .submit {
-	background-color: gray;
-	border-radius: 12px;
-	border: 0;
-	box-sizing: border-box;
-	color: #eee;
-	cursor: pointer;
-	font-size: 18px;
-	height: 50px;
-	margin-top: 38px;
-	outline: 0;
-	text-align: center;
-	width: 100%;
-  }
-  
-  .submit:active {
-	background-color: rgba(128, 128, 128, 0.502);
-  }
-
-  .submit:hover {
-	background-color: rgba(128, 128, 128, 0.502);
-  }
-  
-
 /* Footer du site*/
 .footer {
 	padding: 2rem;
@@ -641,7 +479,6 @@ li {
 }
 
 .footertext_tel {
-	margin-top: 2rem;
 	color: white;
 	font-size: 1.5rem;
 }
@@ -769,8 +606,8 @@ transition: 0.5s;
 	}
 
 	.welcome {
-		padding-left: 20%;
-		padding-right: 20%;
+		padding-left: 25%;
+		padding-right: 25%;
 		margin-bottom: 0.3rem;
 	}
 
@@ -778,10 +615,7 @@ transition: 0.5s;
 		padding-left: 20%;
 		padding-right: 20%;
 	}
-
-	.topnav {
-		margin: 1% 3.5% 0% 3.5%;
-	}
+	
 
 	.titlelogo {
 		padding: 2rem 2rem 2rem 4rem;

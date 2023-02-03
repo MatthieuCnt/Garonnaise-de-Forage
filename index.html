@@ -10,6 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="normalizer.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="stylesheet" type="text/css" href="animation.css" />
+		<link rel="stylesheet" type="text/css" href="form.css" />
+		<link rel="stylesheet" type="text/css" href="site.css" />
 
 		<script
 			src="https://kit.fontawesome.com/5f95a73160.js"
@@ -18,7 +20,7 @@
 		<title>Garonnaise de forage</title>
 	</head>
 	<body>
-		<div class="loader">
+		<div class="loader1">
 			<div class="container"><a class="border-animation" href="#">
 				<div class="border-animation__inner">GARONNAISE DE FORAGE</div></a></div>
 			</div>
@@ -26,10 +28,19 @@
 		<!--En-tête de page-->
 
 		<header class="main-header">
-			<a href="index.html" style="text-decoration: none; display: flex;">
+			<div style="display: flex; justify-content: space-between;">
+				<a href="index.html" class="link_logo">
 				<img src="img/logo_white1.png" class="logoHeader" alt="logo"/></a>
+				<div class="topnav">
+				<div class="main-navbar">
+					<a href="index.html" class="active"><span class="span">Accueil</span></a>
+					<a href="nav_decouvrir.html"><span class="span">Nos Métiers</span></a>
+					<a href="nav_contact.html"><span class="span">Contact</span></a>
+			</div>
+			</div>	
+		</div>
 			<div class="style_div" id="styleDiv">
-				<div style="display: none;" id="nav_div">
+				<div class="nav_style" style="display: none;" id="nav_div">
 					<ul class="ulStyle">
 						<li><a href="index.html" class="active"><span class="span">Accueil</span></a></li>
 						<li><a href="nav_decouvrir.html"><span class="span">Nos Métiers</span></a></li>
@@ -49,13 +60,14 @@
 			<a href="https://www.linkedin.com/company/garonnaise-de-forage/" class="fa fa-brands fa-linkedin"></a>
 			<section class="welcome">
 				<h2 class="title">Notre structure :</h2>
+				<div>
 				<p class="textp" >
 					La Garonnaise de forage fut créee en septembre 1997 pour répondre aux enjeux des aléas géotéchniques dans le secteur de la construction.
 					Les sols limoneux et argileux très répandus dans le sud-ouest nécessitent la mise en place de fondations dites "spéciales".<br><br>
 					Depuis notre création nous accompagnons les particuliers, les entreprises, les collectivités et les promoteurs dans la réalisation de leurs projets.
-					Nous avons pu acquérir une grande connaissance sur la nature des sols rencontrés, depuis plus de 20ans.<br><br>
-					<img style="margin: auto; width: auto;" src="img/back.jpg"/><br><br>
-				</p>
+					Nous avons pu acquérir une grande connaissance sur la nature des sols rencontrés, depuis plus de 20ans.<br><br></p>
+					<img class="section_img" src="img/back.jpg"/><br><br>
+			</div>
 			</section>
 				<h2 class="title_location">Où nous trouver :</h2>
 					<p class="text_location">Avec un siège social basé à Cugnaux (près de Toulouse),
@@ -116,15 +128,14 @@
 				</li>
 				<li class="info">
 					<a href="https://www.google.com/maps/place/Garonnaise+de+Forage/@43.5775421,1.386866,13z/data=!4m5!3m4!1s0x0:0xc9883fe7c6544610!8m2!3d43.5551217!4d1.3659882" class="fas fa-map map_contact"></a><br>
-					<a href="https://www.google.com/maps/place/Garonnaise+de+Forage/@43.5775421,1.386866,13z/data=!4m5!3m4!1s0x0:0xc9883fe7c6544610!8m2!3d43.5551217!4d1.3659882" class="footertext">Adresse : 8 Rue Aristide Berges<br>31270 Cugnaux
-				</li>
-				<li class="infos" style="margin-top: 15% ;">
-					<img style="margin: auto; width: 40%;" src="./img/logotype.jpg" alt="logo;"></>
-				</li>
-				<li class="infos" style="margin-top: 3% ;">
-					<a class="footertext" href="mentions.html">Mentions légales</a>
+					<a class="footertext">Adresse : 8 Rue Aristide Berges<br>31270 Cugnaux
 				</li>
 			</ul>
+			<div style="text-align: center;">
+			<li class="infos" style="margin-top: 3% ;">
+				<a class="footertext" href="mentions.html">Mentions légales</a>
+			</li>
+		</div>
 		</footer>
 		<script src="index.js"></script>
 	</body>

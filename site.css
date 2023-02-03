@@ -1,0 +1,99 @@
+@media screen and (min-width: 1024px) {
+	
+
+	header {
+		height: 60rem;
+		background-image: url("img/slide1.1.jpg");
+	}
+
+	.titletext {
+		font-size: 24px;
+	}
+	.style_div {
+		margin: -4rem 1rem 0 0;
+	}
+
+	.text_location {
+		padding-left: 25%;
+		padding-right: 25%;
+	}
+
+	.form {
+		margin-left: 35%;
+		margin-right: 35%;
+	}
+
+	li a {
+		padding: 0; 
+	}
+	
+	.style_div {
+		display: none;
+	}
+
+	.nav_style {
+		display: block;
+	}
+
+	.textp {
+		display: flex;
+	}
+
+	.title {
+		font-size: 30px;
+		margin-bottom: 2rem;
+	}
+	
+	.topnav {
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+	}
+	.header-logo img {
+		width: 18rem;
+	}
+	
+	.back {
+		width: 11rem;
+		margin: 3.5% 3.5% 0% 3.5%;
+	}
+	
+	.topnav a {
+		float: left;
+		display: block;
+		color: #000000;
+		text-align: center;
+		text-decoration: none;
+		font-size: 1.5rem;
+		font-family: Roboto, sans-serif;
+		padding: 1rem;
+		margin: 1rem;
+	}
+	
+	.topnav a:hover {
+		background-color: #005c9665;
+		color: black;
+		border-radius: 15px;
+		font-weight: bold;
+	}
+	
+	.topnav a.active {
+		background-color: #333333;
+		color: white;
+		border-radius: 15px;
+		font-weight: bold;
+	}
+	
+	.topnav .icon {
+		display: none;
+		background-color: #005c96;
+		border-radius: 15px;
+		box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
+	}
+
+	.main-navbar {
+		display: block;
+		margin-top: 2rem;
+	}
+
+	}

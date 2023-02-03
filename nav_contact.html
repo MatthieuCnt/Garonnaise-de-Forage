@@ -9,6 +9,9 @@
 		/>
 		<link rel="stylesheet" type="text/css" href="normalizer.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="animation.css" />
+		<link rel="stylesheet" type="text/css" href="form.css" />
+		<link rel="stylesheet" type="text/css" href="site.css" />
 
 		<script
 			src="https://kit.fontawesome.com/5f95a73160.js"
@@ -28,29 +31,39 @@
 		<!--En-tête de page-->
 
 		<header class="main-header">
-			<div class="topnav">
-				<div class="header-logo">
-					<a href="index.html"></a>
-					<img src="img/logo.png" alt="logo" />
-				</div>
-				<div class="main-navbar" id="myTopnav">
+			<div style="display: flex; justify-content: space-between;">
+				<a href="index.html" class="link_logo">
+				<img src="img/logo_white1.png" class="logoHeader" alt="logo"/></a>
+				<div class="topnav">
+				<div class="main-navbar">
 					<a href="index.html"><span class="span">Accueil</span></a>
 					<a href="nav_decouvrir.html"><span class="span">Nos Métiers</span></a>
-					<a href="nav_contact.html" class="active"><span class="span">Contact</span></a>
-				<a
-					href="javascript:void(0);"
-					class="topnav-link icon"
-					onclick="editNav()"
-				>
-					<i class="fa fa-bars"></i>
-				</a>
+					<a href="nav_contact.html"  class="active"><span class="span">Contact</span></a>
+			</div>
+			</div>	
+		</div>
+			<div class="style_div" id="styleDiv">
+				<div class="nav_style" style="display: none;" id="nav_div">
+					<ul class="ulStyle">
+						<li><a href="index.html" class="active"><span class="span">Accueil</span></a></li>
+						<li><a href="nav_decouvrir.html"><span class="span">Nos Métiers</span></a></li>
+						<li><a href="nav_contact.html"><span class="span">Contact</span></a></li>
+					</ul>
+				</div>
+				<button onclick="navbar()">
+					<i style="padding: 1rem; font-size: 1.5rem;" class="fa fa-bars"></i>
+				</button>
+			</div>
+			<div class="titlelogo">
+				<p class="titletext">
+					Fondations spéciales<br>Pieux - Micropieux - Soutènement</p>
 			</div>
 		</header>
 		<main>
 			<section>
 				<h2 class="title_location">Où nous trouver :</h2>
 					<p class="text_location">Avec un siège social basé à cugnaux (près de Toulouse),
-						nos équipes d'ingénieurs et de techniciens sont à votre disposition pour répondre à toutes sollicitations, vous conseiller et vous accompagner dans vos projets.</p>
+						nos équipes d'ingénieurs et de techniciens< sont à votre disposition pour répondre à toutes sollicitations, vous conseiller et vous accompagner dans vos projets.</p>
 					
 					<div class="section_center">
 						<div class="zoom">
@@ -110,9 +123,6 @@
 				<li class="info">
 					<a href="https://www.google.com/maps/place/Garonnaise+de+Forage/@43.5775421,1.386866,13z/data=!4m5!3m4!1s0x0:0xc9883fe7c6544610!8m2!3d43.5551217!4d1.3659882" class="fas fa-map map_contact"></a><br>
 					<a href="https://www.google.com/maps/place/Garonnaise+de+Forage/@43.5775421,1.386866,13z/data=!4m5!3m4!1s0x0:0xc9883fe7c6544610!8m2!3d43.5551217!4d1.3659882" class="footertext">Adresse : 8 Rue Aristide Berges<br>31270 Cugnaux
-				</li>
-				<li class="infos" style="margin-top: 15% ;">
-					<img style="margin: auto; width: 40%;" src="./img/logotype.jpg" alt="logo;"></>
 				</li>
 				<li class="infos" style="margin-top: 3% ;">
 					<a class="footertext" href="mentions.html">Mentions légales</a>
