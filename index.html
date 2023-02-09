@@ -78,32 +78,34 @@
 						<a style="text-align: -webkit-center;" href="https://www.google.com/maps/place/Garonnaise+de+Forage/@43.5775421,1.386866,13z/data=!4m5!3m4!1s0x0:0xc9883fe7c6544610!8m2!3d43.5551217!4d1.3659882" >
 						<img  src="img/map.png" style="padding: 2rem;"/></a></div>
 					<div class="form">
-						<div class="title">Donnez suite à votre projet :</div>
-						<div class="input-container ic1">
-						<input id="firstname" class="input" type="text" placeholder=" " />
-						<label for="firstname" class="placeholder">Nom et prénom</label>
-						</div>
-						<div class="input-container ic1">
-							<input id="firstname" class="input" type="text" placeholder=" " />
-							<label for="firstname" class="placeholder_facultative">Nom de l'entreprise</label>
-						</div>
-						<div class="input-container ic2">
-						<input id="email" class="input" type="text" placeholder=" " />
-						<label for="email" class="placeholder">Email</label>
-						</div>
-						<div class="input-container ic2">
-						<input id="firstname" class="input" type="text" placeholder=" " />
-						<label for="tel" class="placeholder">Numéro de Téléphone</>
-						</div>
-						<div class="input-container ic2">
-							<input id="firstname" class="input" type="text" placeholder=" " />
-							<label for="text" class="placeholder">Ville</>
-						</div>
-						<div style="height: 100px;" class="input-container ic2">
-							<input id="firstname" class="input" type="text" placeholder=" " />
-							<label for="text" class="placeholder">Votre message</>
-						</div>
-						<button type="text" class="submit">Envoyer</button>
+						<form action="https://formspree.io/f/xvonkrrl" method="POST">
+							<div class="title">Donnez suite à votre projet :</div>
+							<div class="input-container ic1">
+							<input name="Nom" id="firstname" class="input" type="text" placeholder=" " />
+							<label for="firstname" class="placeholder">Nom et prénom</label>
+							</div>
+							<div class="input-container ic1">
+								<input name="Entreprise" id="firstname" class="input" type="text" placeholder=" " />
+								<label for="firstname" class="placeholder_facultative">Nom de l'entreprise</label>
+							</div>
+							<div class="input-container ic2">
+							<input name="Email" id="email" class="input" type="text" placeholder=" " />
+							<label for="email" class="placeholder">Email</label>
+							</div>
+							<div class="input-container ic2">
+							<input name="Tel" id="firstname" class="input" type="text" placeholder=" " />
+							<label for="tel" class="placeholder">Numéro de Téléphone</>
+							</div>
+							<div class="input-container ic2">
+								<input name="Ville" id="firstname" class="input" type="text" placeholder=" " />
+								<label for="text" class="placeholder">Ville</>
+							</div>
+							<div style="height: 100px;" class="input-container ic2">
+								<input name="Message" id="firstname" class="input" type="text" placeholder=" " />
+								<label for="text" class="placeholder">Votre message</>
+							</div>
+							<button type="text" class="submit">Envoyer</button>
+						</form>
 					</div>
 					
 				</main>
