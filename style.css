@@ -165,9 +165,218 @@ button {
    height: fit-content;
 }
 
+
+.slideshow {
+	border: 5px solid white;
+	box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.5);
+	overflow: hidden;
+	max-width: 385px;
+	margin: 2rem 0rem auto;
+	position: relative;
+}
+
+.slideshow1 {
+	border: 5px solid white;
+	box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.5);
+	overflow: hidden;
+	max-width: 385px;
+	margin: 2rem 0rem auto;
+	position: relative;
+}
+
+.slideshow ul {
+	padding-bottom: 66.67%; /* ratio pour le responsive */
+	margin: 0;
+	list-style-type: none;
+	position: relative;
+}
+
+.slideshow li {
+	top: 0;
+	left: 0;
+	animation: slideshow 25s ease infinite;
+	position: absolute;
+	opacity: 0;
+}
+
+.slideshow li:nth-child(2) {
+	animation-delay: 5s;
+}
+
+.slideshow li:nth-child(3) {
+	animation-delay: 10s;
+}
+
+.slideshow li:nth-child(4) {
+	animation-delay: 15s;
+}
+
+.slideshow li:nth-child(5) {
+	animation-delay: 20s;
+}
+
+@keyframes slideshow {
+	0% {
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 1;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.slideshow span {
+	background: rgba(0, 0, 0, 0.7);
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.slideshow1 ul {
+	padding-bottom: 12rem; /* ratio pour le responsive */
+	margin: 0;
+	list-style-type: none;
+	position: relative;
+}
+
+.slideshow1 li {
+	top: 0;
+	left: 0;
+	animation: slideshow 25s ease infinite;
+	position: absolute;
+	opacity: 0;
+}
+
+.slideshow1 li:nth-child(2) {
+	animation-delay: 5s;
+}
+
+.slideshow1 li:nth-child(3) {
+	animation-delay: 10s;
+}
+
+.slideshow1 li:nth-child(4) {
+	animation-delay: 15s;
+}
+
+.slideshow1 li:nth-child(5) {
+	animation-delay: 20s;
+}
+
+@keyframes slideshow1 {
+	0% {
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 1;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.slideshow1 span {
+	background: rgba(0, 0, 0, 0.7);
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+/*****barre progression *****/
+.barre_progression {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	height: 5px;
+	background: white;
+	animation: barre_progression 25s ease-out infinite;
+}
+
+/*****animation barre progression *****/
+@keyframes barre_progression {
+	0%,
+	20%,
+	40%,
+	60%,
+	80%,
+	100% {
+		width: 0%;
+		opacity: 0;
+	}
+
+	4%,
+	24%,
+	44%,
+	64%,
+	84% {
+		width: 0%;
+		opacity: 0.3;
+	}
+
+	16%,
+	36%,
+	56%,
+	76%,
+	96% {
+		width: 100%;
+		opacity: 0.7;
+	}
+
+	17%,
+	37%,
+	57%,
+	77%,
+	97% {
+		width: 100%;
+		opacity: 0.3;
+	}
+
+	18%,
+	38%,
+	58%,
+	78%,
+	98% {
+		width: 100%;
+		opacity: 0;
+	}
+}
+
 .style_div {
 	display:flex;
-	margin: -4rem 1rem 0 0;
+	margin: -5rem 1rem 0 0;
 	float: right;
 }
 
@@ -251,6 +460,11 @@ img {
 	padding: 2rem;
 	text-align: justify;
 	background-color: #333333;
+}
+.welcome1 {
+	background-color: white;
+	 margin-top: 0;
+	  padding: 0;
 }
 
 .section_img {
@@ -384,10 +598,35 @@ img {
 }
 
 .fa-arrow-left {
-	color: #333333;
+	color: white;
 	font-size: 4rem;
 	padding: 1rem;
 }
+
+.qualibat {
+	width: 10rem;
+	margin: auto;
+}
+
+.discover {
+	background-image: url(img/micropieux/img11.jpg);
+	 height: 30rem;
+}
+
+.discover1 {
+background-image: url(img/pieux/imgpieux1.jpg);
+height: 30rem;
+}
+
+.discover2 {
+	background-image:url(img/slide2.jpg);
+	height: 30rem;
+	}
+
+.img_logo {
+	width: 20rem;
+}
+
 
 /* Footer du site*/
 .footer {
@@ -577,19 +816,35 @@ transition: 0.5s;
 @media screen and (min-width: 769px) {
 	.contenerglobal {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		grid-template-areas:
-			'link1 link2'
-			'link3 link4'
-			'link5 .';
+			'link1 link2 link3'
+			 ;
 		grid-template-rows: none;
 		padding: 2rem;
 		grid-gap: 2rem;
+		justify-content: center;
 	}
 
+	.qualibat {
+		width: 13rem
+	}
 	body {
 		font-size: 15px;
 	}
+
+	.discover {
+		background-image: url(img/micropieux/img1.jpg);
+	}
+
+	.discover1 {
+		background-image: url(img/pieux/imgpieux1.1.jpg);
+	}
+
+	.discover2 {
+		background-image:url(img/slide2.1.jpg);
+		}
+
 
 	.contenerglobalactu {
 		display: grid;
@@ -603,6 +858,7 @@ transition: 0.5s;
 
 	.picturelink {
 		height: 30rem;
+		width: 23rem;
 	}
 
 	.welcome {
@@ -610,6 +866,14 @@ transition: 0.5s;
 		padding-right: 25%;
 		margin-bottom: 0.3rem;
 	}
+
+	.welcome1 {
+		padding-left: 0%;
+		padding-right: 0%;
+		margin-bottom: 0.3rem;
+		text-align: center;
+	}
+
 
 	.picture {
 		padding-left: 20%;

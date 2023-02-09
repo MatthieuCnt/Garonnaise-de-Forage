@@ -6,6 +6,10 @@
 		background-image: url("img/slide1.1.jpg");
 	}
 
+	.logoHeader {
+	width: 85%;
+	}
+
 	.titletext {
 		font-size: 24px;
 	}
@@ -37,6 +41,7 @@
 
 	.textp {
 		display: flex;
+		font-size: 20px;
 	}
 
 	.title {
@@ -48,9 +53,6 @@
 		overflow: hidden;
 		display: flex;
 		justify-content: space-between;
-	}
-	.header-logo img {
-		width: 18rem;
 	}
 	
 	.back {
@@ -96,4 +98,44 @@
 		margin-top: 2rem;
 	}
 
+	.picturelink {
+		width: 33rem;
+	}
+
+	.qualibat {
+		width: 18rem
+	}
+
+	.discover {
+		height: 50rem;
+	}
+
+	.discover1 {
+		height: 50rem;
+	}
+
+	.discover2 {
+		height: 50rem;
+	}
+
+	.slideshow {
+		max-width: 700px;
+	}
+
+	.img_slide {
+		width: 700px;
+	}
+
+	.img_logo {
+		width: 35rem;
+		margin-left: -2rem;
+	}
+
+	.style_qualibat {
+	padding: 0 25%;
+	}
+	
+	.map_img {
+		width: 700px;
+	}
 	}

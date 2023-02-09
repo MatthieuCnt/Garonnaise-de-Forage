@@ -9,6 +9,9 @@
 		/>
 		<link rel="stylesheet" type="text/css" href="normalizer.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="animation.css" />
+		<link rel="stylesheet" type="text/css" href="form.css" />
+		<link rel="stylesheet" type="text/css" href="site.css" />
 
 		<script
 			src="https://kit.fontawesome.com/5f95a73160.js"
@@ -26,37 +29,44 @@
 		</div>
 
 		<!--En-tête de page-->
-
-		<header style="background-image: none; height: auto;" class="main">
+		
+		<header class="main discover">
 			
-				<div class="header-logo"  style= "display: flex; justify-content: space-between; margin: 1% 3.5% 0% 3.5%;">
+				<div class="header-logo"  style= "display: flex; justify-content: space-between; margin: 0% 1% 0% 0%;">
 					<div>
-					<img src="img/logo.png" alt="logo" style="width: 20rem;" /></div>
+						<a href="index.html" class="link_logo">
+							<img src="img/logo_final.png" class="logoHeader" alt="logo" style="padding: 1rem;"></a></div>
 					<div>
 					<a href="nav_decouvrir.html" class="fas fa-arrow-left" aria-hidden="true"></a></div>
 				</div>
 		</header>
 		<main>
-			<section class="welcome" style="background-color: white; margin-top: 0;">
-				<img
-								class="activitypicturebig"
-								src="./img/micro.jpg"
-								alt="micro"
-							/>
-			<h2 class="title" style="color: #333333;">Micropieux</h2>
+			<section class="welcome welcome1">
+				<div style="color: white; background-color: #333333;" >
+			<h2 class="title">Micropieux</h2>
 			<div>
-				<p class="textp">Le mictopieu est un élément vertical ou incliné transmettant en profondeur les efforts appliqués en tête (compression ou traction).<br><br>
-				La Garonnaise de forage dispose d'outils de foration pour des diamètres compris entre 140mm et 300mm selon les normes D.T.U et EUROCODES.<br><br>
+				<p class="textp" style="display: block; padding: 2rem;">Le mictopieu est un élément vertical ou incliné transmettant en profondeur les efforts appliqués en tête (compression ou traction).<br><br>
+				La Garonnaise de Forage dispose d'outils de foration pour des diamètres compris entre 140mm et 300mm selon les normes D.T.U et EUROCODES.<br><br>
 				Ils offrent une solution technique adaptée à tout type d'ouvrage (fondations, reprise en sous-oeuvre, clouage) et d'environnement (intérieur, extérieur).<br>
 				Les micropieux sont armés, avec selon les cas une barre de scellement.<br><br>
 				La mise en oeuvre d'une solution "micropieu" s'appuie sur une étude préalable, le plus souvent via une étude géotechnique.
-				Nous possédons les qualifications proffessionnelles Qualibat (1231-1232) et FNTP (2421-7234).<br><br></p>
-				<div style="display: flex;">
-				<img src="./img/qualibat.png" style="width: 40%; margin: auto;" alt="qualibat">
-				<img src="./img/fntp.jpg" style="width: 40%; margin: auto;" alt="FNTP"></div><br><br>
-				<p class="textp">Pour toutes informations complémentaires ou questions, notre équipe est à votre disposition.</p>
+				Nous possédons les qualifications professionnelles Qualibat (1231-1232) et FNTP (2421-7234).<br><br></p></div>
+				<div class="style_qualibat" style="display: flex;">
+				<img class="qualibat" src="./img/qualibat.png" alt="qualibat">
+				<img class="qualibat" src="./img/fntp.jpg" alt="FNTP"></div><br><br>
+				<p class="textp" style="padding: 2rem; place-content: center; text-align: center;">Pour toutes informations complémentaires ou questions, notre équipe est à votre disposition.</p>
 			</div>
 		</section>
+		<div class="slideshow">
+			<ul>
+			<li><img class="img_slide" src="img/micropieux/img2.jpg" alt></li>
+			<li><img class="img_slide" src="img/micropieux/img3.jpg" alt></li>
+			<li><img class="img_slide" src="img/micropieux/img2.jpg" alt></li>
+			<li><img class="img_slide" src="img/micropieux/img3.jpg" alt></li>
+			<li><img class="img_slide" src="img/micropieux/img2.jpg" alt></li>
+			</ul>
+			<div class="barre_progression"></div>
+			</div>
 	</main>
 
 		<!-- Footer -->
