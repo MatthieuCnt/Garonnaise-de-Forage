@@ -1,7 +1,7 @@
 /* version mobile*/
 
 :root {
-	font-size: 10px;
+	font-size: 12px;
 }
 
 * {
@@ -609,12 +609,12 @@ img {
 }
 
 .discover {
-	background-image: url(img/micropieux/img11.jpg);
+	background-image: url(img/micropieux/front.jpg);
 	 height: 30rem;
 }
 
 .discover1 {
-background-image: url(img/pieux/imgpieux1.jpg);
+background-image: url(img/pieux/front.jpg);
 height: 30rem;
 }
 
@@ -627,6 +627,10 @@ height: 30rem;
 	width: 20rem;
 }
 
+.liStyle {
+	text-align: justify;
+	padding-left: 20%;
+	}
 
 /* Footer du site*/
 .footer {
@@ -834,17 +838,20 @@ transition: 0.5s;
 	}
 
 	.discover {
-		background-image: url(img/micropieux/img1.jpg);
+		background-image: url(img/micropieux/front.1.jpg);
 	}
 
 	.discover1 {
-		background-image: url(img/pieux/imgpieux1.1.jpg);
+		background-image: url(img/pieux/front1.jpg);
 	}
 
 	.discover2 {
 		background-image:url(img/soutènement/test.1.jpg);
 		}
 
+	.liStyle {
+		padding-left: 42%;
+		}
 
 	.contenerglobalactu {
 		display: grid;
