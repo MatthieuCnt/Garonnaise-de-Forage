@@ -394,7 +394,7 @@ button {
 }
 
 .text_location {
-	font-size: 14px;
+	font-size: 20px;
 	text-align: justify;
 	padding: 2rem;
 	color: black;
@@ -706,16 +706,16 @@ li {
 }
 
 .tel_contact {
-	font-size: 8rem;
+	font-size: 6rem;
 	margin-top: 2rem;
 }
 
 .mail_contact {
-	font-size: 8rem;
+	font-size: 6rem;
 }
 
 .map_contact {
-	font-size: 8rem;
+	font-size: 6rem;
 	margin-top: 2rem;
 	color: white;
 	transition: 0.5s;
